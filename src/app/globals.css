@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brand: #1F4A7D; /* 深藍 */
 }
 
 @theme inline {
