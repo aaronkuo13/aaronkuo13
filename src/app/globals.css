@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --brand: #1F4A7D; /* 深藍 */
+  --brand: #193255; /* 主色 */
+  --bg: #F8FAFC;    /* 背景色 */
+  --text: #1E293B;  /* 主要文字 */
+  --accent: #3B82F6; /* 按鈕/連結 hover */
+  --border: #E2E8F0; /* 邊框 */
+
+  color-scheme: light;
 }
 
 @theme inline {
@@ -21,7 +25,7 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(--bg);
+  color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
 }

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 上線後把網址換成你的網域或 vercel.app 網址
+Sitemap: https://aaronkuo13.vercel.app/sitemap.xml
