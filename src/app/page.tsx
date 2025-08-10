@@ -5,7 +5,7 @@ const DATA = {
   name: "Aaron Kuo",
   title: "Product Manager / 產品經理",
   tagline:
-    "我擅長通過數據分析識別需求，專注從0到1的產品開發，將創意與現實結合，快速實現價值。數據是產品進化的核心，並貫徹於每個決策中，保證產品持續演進，達到最佳運營效果。",
+    "擅長通過數據分析識別需求，並專注從0到1的產品開發，將創意與現實結合，快速實現價值。在每個決策中，將數據視為展品進化的核心，確保產品持續演進，以達到最佳運營效果。",
   email: "aaronkuo13@gmail.com",
   location: "常駐台北・臺南人",
   avatar:
@@ -25,32 +25,33 @@ const DATA = {
     "數據分析",
     "產品規劃與整合",
     "跨部門合作",
-    "時間與資源管理",
-    "UX與開發知識",
+    "時程與資源管理",
+    "UX設計",
+    "Web/App開發知識",
     "產品推廣與商業化",
     "領導與決策力",
   ],
   projects: [
     {
-      title: "傳統產業物聯網整合",
+      title: "物聯網解決方案",
       desc:
         "成功協助傳統產業公司實現物聯網整合，從零開始設計並構建內部數據追蹤系統。將無法追蹤的損耗轉化為數據化管理，實現預警機制，有效避免機器故障造成的金錢與名譽損失。",
       link: "https://www.nexense.com.tw/solutions",
       tech: ["AWS DynamoDB", "AWS Lambda", "MQTT"],
     },
     {
-      title: "金融數據平台建構",
+      title: "國泰投信官網",
       desc:
         "協助國泰投信打造簡易直觀的數據平台，將數據中心與即時證券交易所資訊整合，為投資人提供定制化的投資信息展示，有效提升投資者體驗與決策效率。",
       link: "https://www.cathaysite.com.tw/",
       tech: ["用戶訪談", "用戶模型", "使用者旅程"],
     },
     {
-      title: "售票平台創建",
+      title: "FunOne Tickets售票平台",
       desc:
         "主導並成功打造一個全新的售票平台 FunOne Tickets，五個月內累積 3000+ 會員並實現百萬營收，展示出強大的市場吸引力與商業價值。",
       link: "https://tickets.funone.io/",
-      tech: ["Google Cloud Platform", "瞬間大量吞吐", "UX", "金流串接", "實體票串接"],
+      tech: ["GCP", "瞬流乘載", "UX", "金流串接", "實體票串接"],
     },
   ],
   cta: "projects" as const, // or "contact"

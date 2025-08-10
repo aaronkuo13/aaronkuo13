@@ -16,25 +16,25 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "傳統產業物聯網整合",
+    title: "物聯網解決方案",
     desc:
       "協助傳統產業實現 IoT 整合，從零打造數據追蹤系統，將損耗數據化並建立預警機制，有效降低故障風險與成本。",
     link: "https://www.nexense.com.tw/solutions",
     tech: ["AWS DynamoDB", "AWS Lambda", "MQTT"],
   },
   {
-    title: "金融數據平台建構",
+    title: "國泰投信官網",
     desc:
       "整合數據中心與即時交易所資訊，打造直觀的投資資訊平台，提升投資者體驗與決策效率。",
     link: "https://www.cathaysite.com.tw/",
     tech: ["用戶訪談", "用戶模型", "使用者旅程"],
   },
   {
-    title: "售票平台創建",
+    title: "FunOne Tickets售票平台",
     desc:
       "主導打造 FunOne Tickets，5 個月 3000+ 會員、破百萬營收，涵蓋 UX、金流與實體票整合。",
     link: "https://tickets.funone.io/",
-    tech: ["GCP", "高併發", "UX", "金流串接", "實體票串接"],
+    tech: ["GCP", "瞬流乘載", "UX", "金流串接", "實體票串接"],
   },
 ];
 
