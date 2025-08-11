@@ -1,7 +1,8 @@
 // src/app/projects/[slug]/page.tsx
 import { notFound } from "next/navigation";
+import Link from "next/link";             // ✅ 新增：使用 Next 的內部路由
 import type { Metadata } from "next";
-import { projects } from "@/app/data/projects"; // 如果你用 "@/data/projects" 就改成那個
+import { projects } from "@/app/data/projects"; // 依你的實際路徑而定
 
 type Props = { params: { slug: string } };
 
@@ -25,7 +26,10 @@ export default function ProjectDetail({ params }: Props) {
 
   return (
     <article className="mx-auto max-w-3xl px-6 py-12">
-      <a href="/projects" className="text-sm hover:underline">← 返回列表</a>
+      {/* ✅ 用 Link 取代 a：內部導覽 */}
+      <Link href="/projects" className="text-sm hover:underline">
+        ← 返回列表
+      </Link>
 
       <h1 className="mt-3 text-3xl font-bold" style={{ color: "var(--brand)" }}>
         {p.title}
@@ -38,7 +42,9 @@ export default function ProjectDetail({ params }: Props) {
           <div className="rounded-2xl border p-4">
             <h3 className="font-semibold">關鍵成果（KPI）</h3>
             <ul className="mt-2 list-disc pl-5 text-gray-700">
-              {p.kpis.map((k) => <li key={k}>{k}</li>)}
+              {p.kpis.map((k) => (
+                <li key={k}>{k}</li>
+              ))}
             </ul>
           </div>
         ) : null}
@@ -52,6 +58,7 @@ export default function ProjectDetail({ params }: Props) {
             {p.link && (
               <li>
                 <b>連結：</b>
+                {/* 外部連結仍用 a */}
                 <a
                   href={p.link}
                   target="_blank"
@@ -69,7 +76,9 @@ export default function ProjectDetail({ params }: Props) {
 
       {p.content && (
         <div className="prose prose-slate mt-8 max-w-none">
-          {p.content.split("\n").map((line, i) => <p key={i}>{line}</p>)}
+          {p.content.split("\n").map((line, i) => (
+            <p key={i}>{line}</p>
+          ))}
         </div>
       )}
     </article>
